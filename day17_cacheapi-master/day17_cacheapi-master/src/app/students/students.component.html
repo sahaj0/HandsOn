@@ -1,0 +1,22 @@
+<div>
+  <button (click)="getStudentsData()">Get Students Data</button>
+  <button (click)="getTeachersData()">Get Teachers Data</button>
+</div>
+
+<!-- when clicked on the button, the respective method will be called and the data will be fetched from the server. The data will be displayed in the template using the ngIf directive. -->
+
+<div *ngIf="data && data.length > 0">
+  <h2>Students Data:</h2>
+  <ul>
+    <li *ngFor="let student of data">{{ student.name }}</li>
+   
+  </ul>
+</div>
+
+<div *ngIf="data && data.length > 0">
+  <h2>Teachers Data:</h2>
+  <ul>
+    <li *ngFor="let teacher of data">{{ teacher.name }}</li>
+    
+  </ul>
+</div>

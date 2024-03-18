@@ -1,0 +1,16 @@
+<div id ="issues">
+    <div class="container">  
+        <!-- write logic to ngFor Directive to display all issues-->
+        <div *ngFor =" let issue of issues">
+            <div>
+                <p>{{ issue.title}}</p>
+                <p>{{ issue.description }}</p>
+            </div>
+              <!-- write logic to call deleteIssue method by passing issue id on click of button -->
+              <button (click) ="deleteIssue(issue.id)">Delete</button>
+            
+        
+        </div>
+    </div>
+</div>
+    
