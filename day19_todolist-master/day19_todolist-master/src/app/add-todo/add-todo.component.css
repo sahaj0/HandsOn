@@ -1,0 +1,29 @@
+/* add-todo.component.css */
+.add-todo-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .add-todo-container input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-todo-container button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-todo-container button:hover {
+    background-color: #45a049;
+  }
+  
